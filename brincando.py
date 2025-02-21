@@ -1,6 +1,7 @@
 import random
 
-numero_secreto = [random.randint(1,10)]
+numero_secreto = random.randint(1,10)
+#print(numero_secreto)
 tentativa = 0
 tentativas = 4
 while tentativa <= tentativas:
@@ -12,6 +13,7 @@ while tentativa <= tentativas:
     
     elif chute == numero_secreto:
         print(f'Parabéns você acertou o número secreto: {chute}!')
+        break
     elif chute != numero_secreto:
         print('Que pena, você errou! :(')
     tentativa += 1
