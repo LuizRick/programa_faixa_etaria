@@ -14,8 +14,10 @@ while tentativa <= tentativas:
     elif chute == numero_secreto:
         print(f'Parabéns você acertou o número secreto: {chute}!')
         break
-    elif chute != numero_secreto:
-        print('Que pena, você errou! :(')
+    elif chute > numero_secreto:
+        print(f'Que pena, você errou! O numero secreto é menor que {chute}  :(')
+    elif chute < numero_secreto:
+        print(f'Que pena, você errou! O numero secreto é maior que {chute}  :(')
     tentativa += 1
     
 
