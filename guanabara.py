@@ -15,13 +15,13 @@ info('                       Editora: Uiclap')
 area(4.5, 8)"""
 
 def escreva(texto):
-    qtd = len(texto)
+    qtd = len(texto) + 8
     print('=' * qtd)
-    print(texto)
+    print(f'    {texto}')
     print('=' * qtd)
 
-escreva('                         Othumba                                 ')
-escreva('                Autor: Luiz Henrique Silva                       ')
-escreva('                        Ano: 2020                                ')
-escreva('                           Uiclap                                ')
+escreva('Othumba')
+escreva('Autor: Luiz Henrique Silva')
+escreva('Ano: 2020')
+escreva('Uiclap')
 
